@@ -1,0 +1,6 @@
+framework module Pods_NewEasyWay {
+  umbrella header "Pods-NewEasyWay-umbrella.h"
+
+  export *
+  module * { export * }
+}
