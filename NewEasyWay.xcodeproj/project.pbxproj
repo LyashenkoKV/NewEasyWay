@@ -13,7 +13,6 @@
 		241FA2FF2B0CE4BC0092F97E /* LogisticTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241FA2FE2B0CE4BC0092F97E /* LogisticTableViewDelegate.swift */; };
 		241FA3012B0CE4EB0092F97E /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241FA3002B0CE4EB0092F97E /* UIColor.swift */; };
 		241FA3042B0DF55B0092F97E /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241FA3032B0DF55B0092F97E /* LocationViewController.swift */; };
-		241FA30A2B0E286A0092F97E /* LogisticCalculateButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241FA3092B0E286A0092F97E /* LogisticCalculateButton.swift */; };
 		241FA30E2B0F2BB60092F97E /* LocationSearchResultsUpdating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241FA30D2B0F2BB60092F97E /* LocationSearchResultsUpdating.swift */; };
 		246C60A12B178F09003207BE /* ShippingDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246C60A02B178F09003207BE /* ShippingDatabase.swift */; };
 		246C60A42B186F0D003207BE /* TransportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246C60A32B186F0D003207BE /* TransportViewController.swift */; };
@@ -46,6 +45,8 @@
 		24BAEB6B2AF956640087C52F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BAEB6A2AF956640087C52F /* MainViewController.swift */; };
 		24C9A7F52B19D1BE008AF2D7 /* TransportViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9A7F42B19D1BE008AF2D7 /* TransportViewControllerDelegate.swift */; };
 		24C9A7F72B19D245008AF2D7 /* LogisticTransportDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9A7F62B19D245008AF2D7 /* LogisticTransportDelegate.swift */; };
+		24C9A7FA2B19EDCA008AF2D7 /* ApplicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9A7F92B19EDCA008AF2D7 /* ApplicationViewController.swift */; };
+		24C9A7FC2B19F4FF008AF2D7 /* CreateButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9A7FB2B19F4FF008AF2D7 /* CreateButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,7 +73,6 @@
 		241FA2FE2B0CE4BC0092F97E /* LogisticTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogisticTableViewDelegate.swift; sourceTree = "<group>"; };
 		241FA3002B0CE4EB0092F97E /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		241FA3032B0DF55B0092F97E /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
-		241FA3092B0E286A0092F97E /* LogisticCalculateButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogisticCalculateButton.swift; sourceTree = "<group>"; };
 		241FA30D2B0F2BB60092F97E /* LocationSearchResultsUpdating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchResultsUpdating.swift; sourceTree = "<group>"; };
 		246C60A02B178F09003207BE /* ShippingDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShippingDatabase.swift; sourceTree = "<group>"; };
 		246C60A32B186F0D003207BE /* TransportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportViewController.swift; sourceTree = "<group>"; };
@@ -109,6 +109,8 @@
 		24BAEB6A2AF956640087C52F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		24C9A7F42B19D1BE008AF2D7 /* TransportViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportViewControllerDelegate.swift; sourceTree = "<group>"; };
 		24C9A7F62B19D245008AF2D7 /* LogisticTransportDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogisticTransportDelegate.swift; sourceTree = "<group>"; };
+		24C9A7F92B19EDCA008AF2D7 /* ApplicationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationViewController.swift; sourceTree = "<group>"; };
+		24C9A7FB2B19F4FF008AF2D7 /* CreateButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 				2486532E2B1489D300D07F42 /* LogisticViewController */,
 				2486532F2B1489F200D07F42 /* LocationViewController */,
 				246C60A22B186ED4003207BE /* TransportViewController */,
+				24C9A7F82B19ED4E008AF2D7 /* ApplicationViewController */,
 				2492801E2B160DCA00813E6A /* TapBarController */,
 			);
 			path = ViewControllers;
@@ -153,7 +156,6 @@
 			children = (
 				24147EBA2B061CDD00CA980A /* LogisticTableViewDataSource.swift */,
 				241FA2FE2B0CE4BC0092F97E /* LogisticTableViewDelegate.swift */,
-				241FA3092B0E286A0092F97E /* LogisticCalculateButton.swift */,
 				24C9A7F62B19D245008AF2D7 /* LogisticTransportDelegate.swift */,
 			);
 			path = Extensions;
@@ -381,8 +383,17 @@
 			children = (
 				241FA3002B0CE4EB0092F97E /* UIColor.swift */,
 				246C60A52B18731E003207BE /* CreateTableView.swift */,
+				24C9A7FB2B19F4FF008AF2D7 /* CreateButton.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		24C9A7F82B19ED4E008AF2D7 /* ApplicationViewController */ = {
+			isa = PBXGroup;
+			children = (
+				24C9A7F92B19EDCA008AF2D7 /* ApplicationViewController.swift */,
+			);
+			path = ApplicationViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -531,6 +542,7 @@
 				24BAEB552AF93CBA0087C52F /* AirTransport.swift in Sources */,
 				246C60B52B18F008003207BE /* CalculatorViewModel.swift in Sources */,
 				246C60AB2B187A0F003207BE /* TransportTableViewDelegate.swift in Sources */,
+				24C9A7FC2B19F4FF008AF2D7 /* CreateButton.swift in Sources */,
 				246C60AF2B18E868003207BE /* TransportModel.swift in Sources */,
 				24BAEB1E2AE949BB0087C52F /* SceneDelegate.swift in Sources */,
 				24BAEB5C2AF93E080087C52F /* TransportFactory.swift in Sources */,
@@ -538,12 +550,12 @@
 				246C60A92B187959003207BE /* TransportTableViewDataSource.swift in Sources */,
 				24BAEB672AF944FA0087C52F /* LogisticModel.swift in Sources */,
 				241FA3012B0CE4EB0092F97E /* UIColor.swift in Sources */,
+				24C9A7FA2B19EDCA008AF2D7 /* ApplicationViewController.swift in Sources */,
 				24BAEB6B2AF956640087C52F /* MainViewController.swift in Sources */,
 				247B05722B0241CA00B1336C /* CellData.swift in Sources */,
 				246C60A62B18731E003207BE /* CreateTableView.swift in Sources */,
 				241FA3042B0DF55B0092F97E /* LocationViewController.swift in Sources */,
 				24BAEB5E2AF93F3C0087C52F /* ConcreteTransportFactory.swift in Sources */,
-				241FA30A2B0E286A0092F97E /* LogisticCalculateButton.swift in Sources */,
 				24BAEB692AF94E6E0087C52F /* MainTabBarController.swift in Sources */,
 				24BAEB532AF93C430087C52F /* AutoTransport.swift in Sources */,
 				24147EB92B06153E00CA980A /* CellConfigurable.swift in Sources */,

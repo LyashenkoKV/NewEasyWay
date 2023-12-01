@@ -12,7 +12,7 @@ final class LogisticViewController: UIViewController {
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask { .portrait }
     
     lazy var tableView = UITableView()
-    private lazy var calculateButton = UIButton()
+    lazy var calculateButton = UIButton()
     lazy var logisticModel = LogisticModel()
 
     let itemCountsPerSection: [SectionKind: Int] = [
@@ -28,9 +28,12 @@ final class LogisticViewController: UIViewController {
         createTableView(tableView: tableView)
         tableView.register(BaseCell.self, forCellReuseIdentifier: CellIdentifier.base.rawValue)
         tableView.register(QuestionViewCell.self, forCellReuseIdentifier: CellIdentifier.question.rawValue)
-        createButton(calculateButton: calculateButton)
+        //createButton(button: calculateButton, with: "Рассчитать")
+        calculateButton.createButton(view: self.view, action: #selector(calculateButtonTapped), title: "Рассчитать")
         
         tableView.delegate = self
         tableView.dataSource = self
     }
+    
+    @objc func calculateButtonTapped() {}
 }

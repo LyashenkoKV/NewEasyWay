@@ -8,8 +8,9 @@
 import UIKit
 
 final class MainTabBarController: UITabBarController {
-    let mainViewCintroller = MainViewController()
-    let logisticsCalculatiorViewController = LogisticViewController()
+    private lazy var mainViewCintroller = MainViewController()
+    private lazy var logisticsCalculatiorViewController = LogisticViewController()
+    private lazy var applicationViewController = ApplicationViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,10 +28,12 @@ final class MainTabBarController: UITabBarController {
         let monochrome = UIImage.SymbolConfiguration.preferringMonochrome()
         guard let mainImage = UIImage(systemName: "shippingbox", withConfiguration: monochrome) else { return }
         guard let calcImage = UIImage(systemName: "plusminus", withConfiguration: monochrome) else { return }
+        guard let applImage = UIImage(systemName: "list.bullet", withConfiguration: monochrome) else { return }
         
         viewControllers = [
             generateNavigationController(rootViewController: mainViewCintroller, title: "Главная", image: mainImage),
-            generateNavigationController(rootViewController: logisticsCalculatiorViewController, title: "Калькулятор", image: calcImage)
+            generateNavigationController(rootViewController: logisticsCalculatiorViewController, title: "Калькулятор", image: calcImage),
+            generateNavigationController(rootViewController: applicationViewController, title: "Мои заявки", image: applImage)
         ]
     }
  }
