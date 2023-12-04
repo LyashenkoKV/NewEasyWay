@@ -8,21 +8,21 @@
 import UIKit
 
 extension UIButton {
-    func createButton(view: UIView, action: Selector, title: String) {
+    func createButton(viewController: UIViewController, action: Selector, title: String) {
         self.setTitle(title, for: .normal)
         self.backgroundColor = .appPurple
         self.layer.cornerRadius = 10
         self.setTitleColor(.white, for: .normal)
         self.translatesAutoresizingMaskIntoConstraints = false
-        self.addTarget(self, action: action, for: .touchUpInside)
+        self.addTarget(viewController, action: action, for: .touchUpInside)
         
-        view.addSubview(self)
+        viewController.view.addSubview(self)
         
         NSLayoutConstraint.activate([
-            self.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50),
-            self.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -50),
+            self.leadingAnchor.constraint(equalTo: viewController.view.leadingAnchor, constant: 50),
+            self.trailingAnchor.constraint(equalTo: viewController.view.trailingAnchor, constant: -50),
             self.heightAnchor.constraint(equalToConstant: 40),
-            self.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -20)
+            self.bottomAnchor.constraint(equalTo: viewController.view.safeAreaLayoutGuide.bottomAnchor, constant: -20)
         ])
     }
 }

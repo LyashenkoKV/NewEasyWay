@@ -28,19 +28,3 @@ final class QuestionViewCell: BaseCell {
         horizontalStack.addArrangedSubview(switchControl)
     }
 }
-
-import SwiftUI
-
-struct QuestCellAdapter: UIViewControllerRepresentable {
-    func makeUIViewController(context: Context) -> some UIViewController {
-        return LogisticViewController()
-    }
-    func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {
-        
-    }
-}
-struct CellProvider: PreviewProvider {
-    static var previews: some View {
-        ViewControllerAdapter()
-    }
-}

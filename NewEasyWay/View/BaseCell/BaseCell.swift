@@ -11,6 +11,8 @@ enum CellIdentifier: String {
     case base = "Cell"
     case question = "QuestCell"
     case transport = "TransportCell"
+    case application = "ApplicationCell"
+    case contacts = "ContactsCell"
 }
 
 class BaseCell: UITableViewCell {
@@ -77,22 +79,5 @@ extension BaseCell: CellConfigurable {
     func configure(image: UIImage, textTitle: String) {
         cellImageView.image = image
         title.text = textTitle
-    }
-}
-
-
-import SwiftUI
-
-struct BaseQuestCellAdapter: UIViewControllerRepresentable {
-    func makeUIViewController(context: Context) -> some UIViewController {
-        return LogisticViewController()
-    }
-    func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {
-        
-    }
-}
-struct BaseCellProvider: PreviewProvider {
-    static var previews: some View {
-        ViewControllerAdapter()
     }
 }

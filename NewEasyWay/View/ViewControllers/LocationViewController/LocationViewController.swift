@@ -30,20 +30,3 @@ final class LocationViewController: UIViewController {
         definesPresentationContext = true
     }
 }
-
-// MARK: SwiftUI
-import SwiftUI
-
-struct ViewControllerAdapter: UIViewControllerRepresentable {
-    func makeUIViewController(context: Context) -> some UIViewController {
-        return LocationViewController()
-    }
-    func updateUIViewController(_ uiViewController: UIViewControllerType, context: Context) {
-        
-    }
-}
-struct AdvancedProvider: PreviewProvider {
-    static var previews: some View {
-        ViewControllerAdapter()
-    }
-}

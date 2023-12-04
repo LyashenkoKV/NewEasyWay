@@ -9,9 +9,16 @@ import UIKit
 
 class ApplicationViewController: UIViewController {
 
+    private lazy var addAppButton = UIButton()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        view.backgroundColor = .systemGray6
+        addAppButton.createButton(viewController: self, action: #selector(addAppButtonTapped), title: "Новая заявка")
     }
-
+    
+    @objc func addAppButtonTapped() {
+        let logisticViewController = LogisticViewController()
+        navigationController?.pushViewController(logisticViewController, animated: true)
+    }
 }

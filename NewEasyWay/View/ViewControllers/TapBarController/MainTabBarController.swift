@@ -11,6 +11,7 @@ final class MainTabBarController: UITabBarController {
     private lazy var mainViewCintroller = MainViewController()
     private lazy var logisticsCalculatiorViewController = LogisticViewController()
     private lazy var applicationViewController = ApplicationViewController()
+    private lazy var contactsViewController = ContactsViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,14 +27,16 @@ final class MainTabBarController: UITabBarController {
     
     private func addViewControllers() {
         let monochrome = UIImage.SymbolConfiguration.preferringMonochrome()
-        guard let mainImage = UIImage(systemName: "shippingbox", withConfiguration: monochrome) else { return }
-        guard let calcImage = UIImage(systemName: "plusminus", withConfiguration: monochrome) else { return }
-        guard let applImage = UIImage(systemName: "list.bullet", withConfiguration: monochrome) else { return }
+        guard let mainImage = UIImage(systemName: "shippingbox", withConfiguration: monochrome),
+              let calcImage = UIImage(systemName: "plusminus", withConfiguration: monochrome),
+              let applImage = UIImage(systemName: "list.bullet", withConfiguration: monochrome),
+              let contactsImage = UIImage(systemName: "phone.down", withConfiguration: monochrome) else { return }
         
         viewControllers = [
             generateNavigationController(rootViewController: mainViewCintroller, title: "Главная", image: mainImage),
             generateNavigationController(rootViewController: logisticsCalculatiorViewController, title: "Калькулятор", image: calcImage),
-            generateNavigationController(rootViewController: applicationViewController, title: "Мои заявки", image: applImage)
+            generateNavigationController(rootViewController: applicationViewController, title: "Мои заявки", image: applImage),
+            generateNavigationController(rootViewController: contactsViewController, title: "Контакты", image: contactsImage)
         ]
     }
  }
