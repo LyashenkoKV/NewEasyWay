@@ -1,6 +1,0 @@
-Target dependency graph (4 targets)
-Target 'Pods-NewEasyWayUITests' in project 'Pods' (no dependencies)
-Target 'Pods-NewEasyWayTests' in project 'Pods' (no dependencies)
-Target 'Pods-NewEasyWay' in project 'Pods'
-➜ Explicit dependency on target 'SnapKit' in project 'Pods'
-Target 'SnapKit' in project 'Pods' (no dependencies)
