@@ -7,20 +7,21 @@
 
 import UIKit
 
-extension UIViewController {
-    func createTableView(tableView: UITableView) {
-        tableView.translatesAutoresizingMaskIntoConstraints = false
-        tableView.separatorStyle = .none
-        tableView.backgroundColor = .systemGray6
-        tableView.sectionHeaderHeight = 0
+extension UITableView {
+    func createTableView(viewController: UIViewController, withFooter: Bool = false) {
+        self.translatesAutoresizingMaskIntoConstraints = false
+        self.separatorStyle = .none
+        self.backgroundColor = .systemGray6
+        self.sectionHeaderHeight = 0
         
-        view.addSubview(tableView)
+        viewController.view.addSubview(self)
        
-        NSLayoutConstraint.activate([
-            tableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
-            tableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-            tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
-        ])
+        let constraints: [NSLayoutConstraint] = [
+            self.bottomAnchor.constraint(equalTo: viewController.view.safeAreaLayoutGuide.bottomAnchor),
+            self.topAnchor.constraint(equalTo: viewController.view.safeAreaLayoutGuide.topAnchor),
+            self.leadingAnchor.constraint(equalTo: viewController.view.leadingAnchor),
+            self.trailingAnchor.constraint(equalTo: viewController.view.trailingAnchor)
+        ]
+        NSLayoutConstraint.activate(constraints)
     }
 }

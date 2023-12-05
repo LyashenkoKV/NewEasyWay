@@ -25,7 +25,7 @@ final class LogisticViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemGray6
-        createTableView(tableView: tableView)
+        tableView.createTableView(viewController: self, withFooter: false)
         tableView.register(BaseCell.self, forCellReuseIdentifier: CellIdentifier.base.rawValue)
         tableView.register(QuestionViewCell.self, forCellReuseIdentifier: CellIdentifier.question.rawValue)
         calculateButton.createButton(viewController: self, action: #selector(calculateButtonTapped), title: "Рассчитать")

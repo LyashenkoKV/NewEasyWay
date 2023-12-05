@@ -20,11 +20,12 @@ class BaseCell: UITableViewCell {
         let horizontalStack = UIStackView()
         horizontalStack.axis = .horizontal
         horizontalStack.alignment = .center
+        horizontalStack.spacing = 20
         horizontalStack.translatesAutoresizingMaskIntoConstraints = false
         return horizontalStack
     }()
     
-    lazy var cellImageView: UIImageView = {
+    lazy var cellImageView: UIImageView? = {
         let img = UIImageView()
         img.tintColor = .appGreen
         img.translatesAutoresizingMaskIntoConstraints = false
@@ -38,7 +39,6 @@ class BaseCell: UITableViewCell {
         lbl.translatesAutoresizingMaskIntoConstraints = false
         lbl.font = UIFont.systemFont(ofSize: 15, weight: .light)
         lbl.numberOfLines = 1
-        lbl.textAlignment = .left
         return lbl
     }()
     
@@ -52,32 +52,39 @@ class BaseCell: UITableViewCell {
     }
     
     func setupCell() {
-        horizontalStack.addArrangedSubview(cellImageView)
+        if let cellImageView = cellImageView {
+            horizontalStack.addArrangedSubview(cellImageView)
+        }
         horizontalStack.addArrangedSubview(title)
         contentView.addSubview(horizontalStack)
         configureStackConstraints()
     }
 
     // MARK: - Constraints
-    private func configureStackConstraints() {
-        NSLayoutConstraint.activate([
+    func configureStackConstraints() {
+        var constraints: [NSLayoutConstraint] = [
             horizontalStack.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20),
             horizontalStack.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20),
             horizontalStack.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 0),
             horizontalStack.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: 0),
-            
-            cellImageView.centerYAnchor.constraint(equalTo: horizontalStack.centerYAnchor),
+            horizontalStack.heightAnchor.constraint(equalToConstant: 50)
+        ]
+        if let cellImageView = cellImageView {
+            constraints += [
+                cellImageView.centerYAnchor.constraint(equalTo: horizontalStack.centerYAnchor),
+                cellImageView.widthAnchor.constraint(equalToConstant: 30)
+            ]
+        }
+        constraints += [
             title.centerYAnchor.constraint(equalTo: horizontalStack.centerYAnchor),
-            title.leftAnchor.constraint(equalTo: cellImageView.rightAnchor, constant: 20),
-            
-            cellImageView.widthAnchor.constraint(equalToConstant: 30)
-        ])
+        ]
+        NSLayoutConstraint.activate(constraints)
     }
 }
 
 extension BaseCell: CellConfigurable {
-    func configure(image: UIImage, textTitle: String) {
-        cellImageView.image = image
+    func configure(image: UIImage?, textTitle: String) {
+        cellImageView?.image = image
         title.text = textTitle
     }
 }

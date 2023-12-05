@@ -8,6 +8,6 @@
 import UIKit
 
 struct CellData {
-    let image: UIImage
+    let image: UIImage?
     let textTitle: String
 }

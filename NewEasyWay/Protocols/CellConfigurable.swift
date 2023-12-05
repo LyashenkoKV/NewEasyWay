@@ -8,7 +8,7 @@
 import UIKit
 
 protocol CellConfigurable {
-    var cellImageView: UIImageView { get }
+    var cellImageView: UIImageView? { get }
     var title: UILabel { get }
-    func configure(image: UIImage, textTitle: String)
+    func configure(image: UIImage?, textTitle: String)
 }

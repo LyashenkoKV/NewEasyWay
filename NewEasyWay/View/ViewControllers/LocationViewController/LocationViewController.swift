@@ -8,8 +8,7 @@
 import UIKit
 
 final class LocationViewController: UIViewController {
-    //lazy var viewModel = LogisticViewModel()
-    
+
     private lazy var searchController: UISearchController = {
         let searchController = UISearchController(searchResultsController: nil)
         searchController.searchResultsUpdater = self

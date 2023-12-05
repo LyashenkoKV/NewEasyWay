@@ -50,6 +50,11 @@
 		24C9A7FF2B19FC8B008AF2D7 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9A7FE2B19FC8B008AF2D7 /* ContactsViewController.swift */; };
 		24C9A8052B1DC38E008AF2D7 /* ProfileButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9A8042B1DC38E008AF2D7 /* ProfileButton.swift */; };
 		24C9A8062B1DD8C7008AF2D7 /* Yeseva One.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24C9A8022B1A030F008AF2D7 /* Yeseva One.ttf */; };
+		24C9A8092B1DDCFC008AF2D7 /* ContactsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9A8082B1DDCFC008AF2D7 /* ContactsDataSource.swift */; };
+		24C9A80B2B1DDE9D008AF2D7 /* ContactsTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9A80A2B1DDE9D008AF2D7 /* ContactsTableViewDelegate.swift */; };
+		24C9A80E2B1E04F4008AF2D7 /* ContactViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9A80D2B1E04F4008AF2D7 /* ContactViewCell.swift */; };
+		24C9A8102B1E1746008AF2D7 /* ContactsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9A80F2B1E1746008AF2D7 /* ContactsModel.swift */; };
+		24C9A8122B1F2896008AF2D7 /* ContactsFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9A8112B1F2896008AF2D7 /* ContactsFooterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +122,11 @@
 		24C9A7FE2B19FC8B008AF2D7 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 		24C9A8022B1A030F008AF2D7 /* Yeseva One.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Yeseva One.ttf"; sourceTree = "<group>"; };
 		24C9A8042B1DC38E008AF2D7 /* ProfileButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileButton.swift; sourceTree = "<group>"; };
+		24C9A8082B1DDCFC008AF2D7 /* ContactsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsDataSource.swift; sourceTree = "<group>"; };
+		24C9A80A2B1DDE9D008AF2D7 /* ContactsTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTableViewDelegate.swift; sourceTree = "<group>"; };
+		24C9A80D2B1E04F4008AF2D7 /* ContactViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewCell.swift; sourceTree = "<group>"; };
+		24C9A80F2B1E1746008AF2D7 /* ContactsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsModel.swift; sourceTree = "<group>"; };
+		24C9A8112B1F2896008AF2D7 /* ContactsFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsFooterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -308,6 +318,7 @@
 				247B05712B0241CA00B1336C /* CellData.swift */,
 				24BAEB662AF944FA0087C52F /* LogisticModel.swift */,
 				246C60AE2B18E868003207BE /* TransportModel.swift */,
+				24C9A80F2B1E1746008AF2D7 /* ContactsModel.swift */,
 				246C60A02B178F09003207BE /* ShippingDatabase.swift */,
 			);
 			path = Model;
@@ -408,7 +419,10 @@
 		24C9A7FD2B19FC5D008AF2D7 /* ContactViewController */ = {
 			isa = PBXGroup;
 			children = (
+				24C9A80C2B1E04DC008AF2D7 /* Cell */,
+				24C9A8072B1DDCD0008AF2D7 /* Extensions */,
 				24C9A7FE2B19FC8B008AF2D7 /* ContactsViewController.swift */,
+				24C9A8112B1F2896008AF2D7 /* ContactsFooterView.swift */,
 			);
 			path = ContactViewController;
 			sourceTree = "<group>";
@@ -427,6 +441,23 @@
 				24C9A8042B1DC38E008AF2D7 /* ProfileButton.swift */,
 			);
 			path = Button;
+			sourceTree = "<group>";
+		};
+		24C9A8072B1DDCD0008AF2D7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				24C9A8082B1DDCFC008AF2D7 /* ContactsDataSource.swift */,
+				24C9A80A2B1DDE9D008AF2D7 /* ContactsTableViewDelegate.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		24C9A80C2B1E04DC008AF2D7 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				24C9A80D2B1E04F4008AF2D7 /* ContactViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -569,6 +600,7 @@
 				246C60A12B178F09003207BE /* ShippingDatabase.swift in Sources */,
 				24BAEB592AF93D470087C52F /* MultimodalTransport.swift in Sources */,
 				24C9A7FF2B19FC8B008AF2D7 /* ContactsViewController.swift in Sources */,
+				24C9A8122B1F2896008AF2D7 /* ContactsFooterView.swift in Sources */,
 				241FA2FF2B0CE4BC0092F97E /* LogisticTableViewDelegate.swift in Sources */,
 				24147EBB2B061CDD00CA980A /* LogisticTableViewDataSource.swift in Sources */,
 				24BAEB502AF933500087C52F /* TransportProtocol.swift in Sources */,
@@ -577,7 +609,9 @@
 				24BAEB552AF93CBA0087C52F /* AirTransport.swift in Sources */,
 				246C60B52B18F008003207BE /* CalculatorViewModel.swift in Sources */,
 				246C60AB2B187A0F003207BE /* TransportTableViewDelegate.swift in Sources */,
+				24C9A8102B1E1746008AF2D7 /* ContactsModel.swift in Sources */,
 				24C9A7FC2B19F4FF008AF2D7 /* CreateButton.swift in Sources */,
+				24C9A80B2B1DDE9D008AF2D7 /* ContactsTableViewDelegate.swift in Sources */,
 				24C9A8052B1DC38E008AF2D7 /* ProfileButton.swift in Sources */,
 				246C60AF2B18E868003207BE /* TransportModel.swift in Sources */,
 				24BAEB1E2AE949BB0087C52F /* SceneDelegate.swift in Sources */,
@@ -596,10 +630,12 @@
 				24BAEB532AF93C430087C52F /* AutoTransport.swift in Sources */,
 				24147EB92B06153E00CA980A /* CellConfigurable.swift in Sources */,
 				24147EB52B04A61500CA980A /* QuestionViewCell.swift in Sources */,
+				24C9A8092B1DDCFC008AF2D7 /* ContactsDataSource.swift in Sources */,
 				247B05702AFD0F1500B1336C /* BaseCell.swift in Sources */,
 				24BAEB4D2AF932880087C52F /* ShippingRequest.swift in Sources */,
 				24BAEB572AF93D0B0087C52F /* RailwayTransport.swift in Sources */,
 				241FA30E2B0F2BB60092F97E /* LocationSearchResultsUpdating.swift in Sources */,
+				24C9A80E2B1E04F4008AF2D7 /* ContactViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

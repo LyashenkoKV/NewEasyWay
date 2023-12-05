@@ -17,7 +17,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let viewController = MainTabBarController()
         viewController.tabBar.tintColor = .darkGray
-        viewController.navigationController?.navigationBar.prefersLargeTitles = true
         let window = UIWindow(windowScene: windowScene)
         
         self.window = window
