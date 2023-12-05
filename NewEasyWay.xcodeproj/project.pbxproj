@@ -55,6 +55,7 @@
 		24C9A80E2B1E04F4008AF2D7 /* ContactViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9A80D2B1E04F4008AF2D7 /* ContactViewCell.swift */; };
 		24C9A8102B1E1746008AF2D7 /* ContactsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9A80F2B1E1746008AF2D7 /* ContactsModel.swift */; };
 		24C9A8122B1F2896008AF2D7 /* ContactsFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9A8112B1F2896008AF2D7 /* ContactsFooterView.swift */; };
+		24C9A8142B1F3CED008AF2D7 /* ContactsFooterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9A8132B1F3CED008AF2D7 /* ContactsFooterDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,6 +128,7 @@
 		24C9A80D2B1E04F4008AF2D7 /* ContactViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewCell.swift; sourceTree = "<group>"; };
 		24C9A80F2B1E1746008AF2D7 /* ContactsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsModel.swift; sourceTree = "<group>"; };
 		24C9A8112B1F2896008AF2D7 /* ContactsFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsFooterView.swift; sourceTree = "<group>"; };
+		24C9A8132B1F3CED008AF2D7 /* ContactsFooterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsFooterDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -448,6 +450,7 @@
 			children = (
 				24C9A8082B1DDCFC008AF2D7 /* ContactsDataSource.swift */,
 				24C9A80A2B1DDE9D008AF2D7 /* ContactsTableViewDelegate.swift */,
+				24C9A8132B1F3CED008AF2D7 /* ContactsFooterDelegate.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -614,6 +617,7 @@
 				24C9A80B2B1DDE9D008AF2D7 /* ContactsTableViewDelegate.swift in Sources */,
 				24C9A8052B1DC38E008AF2D7 /* ProfileButton.swift in Sources */,
 				246C60AF2B18E868003207BE /* TransportModel.swift in Sources */,
+				24C9A8142B1F3CED008AF2D7 /* ContactsFooterDelegate.swift in Sources */,
 				24BAEB1E2AE949BB0087C52F /* SceneDelegate.swift in Sources */,
 				24BAEB5C2AF93E080087C52F /* TransportFactory.swift in Sources */,
 				24C9A7F72B19D245008AF2D7 /* LogisticTransportDelegate.swift in Sources */,

@@ -28,10 +28,9 @@ extension ContactsViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-        if let footerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: "FooterViewIdentifier") as? ContactsFooterView {
-            return footerView
-        }
-        return nil
+        let footerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: "FooterViewIdentifier") as? ContactsFooterView
+        footerView?.delegate = self
+        return footerView
     }
     
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
