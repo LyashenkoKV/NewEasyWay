@@ -8,7 +8,8 @@
 import UIKit
 
 final class LocationViewController: UIViewController {
-
+    
+    private lazy var imageView = UIImageView()
     private lazy var searchController: UISearchController = {
         let searchController = UISearchController(searchResultsController: nil)
         searchController.searchResultsUpdater = self
@@ -20,6 +21,8 @@ final class LocationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemGray6
+        imageView.create(viewController: self)
+        navigationItem.titleView = imageView
         setupSearchController()
     }
     

@@ -22,7 +22,6 @@ extension ContactsViewController: UITableViewDataSource {
               let cellData = contactsModel.cellData[cities] else {
             return cell
         }
- 
         cell.configure(image: cellData.image, textTitle: cellData.textTitle)
         return cell
     }

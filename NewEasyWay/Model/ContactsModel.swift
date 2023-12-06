@@ -7,8 +7,12 @@
 
 import UIKit
 
+enum Cities: Int, CaseIterable {
+    case Moscow, Krasnodar, Blagoveshchensk, Beijing, Shenzhen, Jinhua, Guangzhou, Heihe
+}
+
 struct ContactsModel {
-    var cellData: [Cities: CellData] = [:]
+    lazy var cellData: [Cities: CellData] = [:]
     
     init() {
         setupCellData()

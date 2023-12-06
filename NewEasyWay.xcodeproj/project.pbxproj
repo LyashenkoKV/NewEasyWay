@@ -56,6 +56,9 @@
 		24C9A8102B1E1746008AF2D7 /* ContactsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9A80F2B1E1746008AF2D7 /* ContactsModel.swift */; };
 		24C9A8122B1F2896008AF2D7 /* ContactsFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9A8112B1F2896008AF2D7 /* ContactsFooterView.swift */; };
 		24C9A8142B1F3CED008AF2D7 /* ContactsFooterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9A8132B1F3CED008AF2D7 /* ContactsFooterDelegate.swift */; };
+		24C9A8192B1F624F008AF2D7 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9A8182B1F624F008AF2D7 /* DetailsViewController.swift */; };
+		24C9A81B2B1F6F22008AF2D7 /* DetailsContactsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9A81A2B1F6F22008AF2D7 /* DetailsContactsModel.swift */; };
+		24C9A81D2B20ABA9008AF2D7 /* CreateLogoImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9A81C2B20ABA9008AF2D7 /* CreateLogoImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,6 +132,9 @@
 		24C9A80F2B1E1746008AF2D7 /* ContactsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsModel.swift; sourceTree = "<group>"; };
 		24C9A8112B1F2896008AF2D7 /* ContactsFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsFooterView.swift; sourceTree = "<group>"; };
 		24C9A8132B1F3CED008AF2D7 /* ContactsFooterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsFooterDelegate.swift; sourceTree = "<group>"; };
+		24C9A8182B1F624F008AF2D7 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		24C9A81A2B1F6F22008AF2D7 /* DetailsContactsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsContactsModel.swift; sourceTree = "<group>"; };
+		24C9A81C2B20ABA9008AF2D7 /* CreateLogoImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateLogoImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,7 +170,7 @@
 				2486532F2B1489F200D07F42 /* LocationViewController */,
 				246C60A22B186ED4003207BE /* TransportViewController */,
 				24C9A7F82B19ED4E008AF2D7 /* ApplicationViewController */,
-				24C9A7FD2B19FC5D008AF2D7 /* ContactViewController */,
+				24C9A7FD2B19FC5D008AF2D7 /* ContactsViewController */,
 				2492801E2B160DCA00813E6A /* TapBarController */,
 			);
 			path = ViewControllers;
@@ -321,6 +327,7 @@
 				24BAEB662AF944FA0087C52F /* LogisticModel.swift */,
 				246C60AE2B18E868003207BE /* TransportModel.swift */,
 				24C9A80F2B1E1746008AF2D7 /* ContactsModel.swift */,
+				24C9A81A2B1F6F22008AF2D7 /* DetailsContactsModel.swift */,
 				246C60A02B178F09003207BE /* ShippingDatabase.swift */,
 			);
 			path = Model;
@@ -406,6 +413,7 @@
 				241FA3002B0CE4EB0092F97E /* UIColor.swift */,
 				246C60A52B18731E003207BE /* CreateTableView.swift */,
 				24C9A7FB2B19F4FF008AF2D7 /* CreateButton.swift */,
+				24C9A81C2B20ABA9008AF2D7 /* CreateLogoImageView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -418,15 +426,16 @@
 			path = ApplicationViewController;
 			sourceTree = "<group>";
 		};
-		24C9A7FD2B19FC5D008AF2D7 /* ContactViewController */ = {
+		24C9A7FD2B19FC5D008AF2D7 /* ContactsViewController */ = {
 			isa = PBXGroup;
 			children = (
+				24C9A8152B1F54C8008AF2D7 /* DetailsViewController */,
 				24C9A80C2B1E04DC008AF2D7 /* Cell */,
 				24C9A8072B1DDCD0008AF2D7 /* Extensions */,
 				24C9A7FE2B19FC8B008AF2D7 /* ContactsViewController.swift */,
 				24C9A8112B1F2896008AF2D7 /* ContactsFooterView.swift */,
 			);
-			path = ContactViewController;
+			path = ContactsViewController;
 			sourceTree = "<group>";
 		};
 		24C9A8012B1A02E0008AF2D7 /* Fonts */ = {
@@ -461,6 +470,14 @@
 				24C9A80D2B1E04F4008AF2D7 /* ContactViewCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		24C9A8152B1F54C8008AF2D7 /* DetailsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				24C9A8182B1F624F008AF2D7 /* DetailsViewController.swift */,
+			);
+			path = DetailsViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -599,6 +616,7 @@
 			files = (
 				246C60A42B186F0D003207BE /* TransportViewController.swift in Sources */,
 				24BAEB202AE949BB0087C52F /* LogisticViewController.swift in Sources */,
+				24C9A8192B1F624F008AF2D7 /* DetailsViewController.swift in Sources */,
 				24C9A7F52B19D1BE008AF2D7 /* TransportViewControllerDelegate.swift in Sources */,
 				246C60A12B178F09003207BE /* ShippingDatabase.swift in Sources */,
 				24BAEB592AF93D470087C52F /* MultimodalTransport.swift in Sources */,
@@ -607,8 +625,10 @@
 				241FA2FF2B0CE4BC0092F97E /* LogisticTableViewDelegate.swift in Sources */,
 				24147EBB2B061CDD00CA980A /* LogisticTableViewDataSource.swift in Sources */,
 				24BAEB502AF933500087C52F /* TransportProtocol.swift in Sources */,
+				24C9A81D2B20ABA9008AF2D7 /* CreateLogoImageView.swift in Sources */,
 				24BAEB602AF93FF80087C52F /* SeaTransport.swift in Sources */,
 				24BAEB1C2AE949BB0087C52F /* AppDelegate.swift in Sources */,
+				24C9A81B2B1F6F22008AF2D7 /* DetailsContactsModel.swift in Sources */,
 				24BAEB552AF93CBA0087C52F /* AirTransport.swift in Sources */,
 				246C60B52B18F008003207BE /* CalculatorViewModel.swift in Sources */,
 				246C60AB2B187A0F003207BE /* TransportTableViewDelegate.swift in Sources */,

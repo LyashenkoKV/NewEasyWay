@@ -7,11 +7,10 @@
 
 import UIKit
 
-enum Cities: Int, CaseIterable {
-    case Moscow, Krasnodar, Blagoveshchensk, Beijing, Shenzhen, Jinhua, Guangzhou, Heihe
-}
-
 final class ContactsViewController: UIViewController {
+    
+    lazy var detailsContactsModel = DetailsContactsModel()
+    private lazy var imageView = UIImageView()
     lazy var tableView = UITableView()
     private lazy var callButton = UIButton()
     lazy var contactsModel = ContactsModel()
@@ -22,6 +21,8 @@ final class ContactsViewController: UIViewController {
         self.title = "Контакты"
         navigationController?.navigationBar.prefersLargeTitles = true
         view.backgroundColor = .systemGray6
+        imageView.create(viewController: self)
+        navigationItem.titleView = imageView
         settings(tableView: tableView)
         callButton.createButton(viewController: self, action: #selector(buttonTapped), title: "Позвонить: \(phoneNumber)")
     }

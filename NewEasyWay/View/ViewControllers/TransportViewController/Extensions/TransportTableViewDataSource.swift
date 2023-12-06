@@ -15,7 +15,6 @@ extension TransportViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifier.transport.rawValue, for: indexPath) as? BaseCell ?? BaseCell()
         cell.backgroundColor = .systemGray5
-        cell.accessoryType = .disclosureIndicator
         
         guard let transportType = TransportType(rawValue: indexPath.row),
               let cellData = transportModel.cellData[transportType] else {
@@ -27,6 +26,6 @@ extension TransportViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 60
+        return 50
     }
 }

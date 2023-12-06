@@ -7,10 +7,6 @@
 
 import UIKit
 
-enum TransportType: Int, CaseIterable {
-    case auto, air, railway, sea, multimodal
-}
-
 final class CalculatorViewModel {
     private(set) var selectedTransportType: TransportType?
     private(set) var shippingRequest: ShippingRequest?

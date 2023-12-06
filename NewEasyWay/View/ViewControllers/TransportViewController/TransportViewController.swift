@@ -9,6 +9,7 @@ import UIKit
 
 final class TransportViewController: UIViewController {
     
+    private lazy var imageView = UIImageView()
     lazy var tableView = UITableView()
     lazy var transportModel = TransportModel()
     
@@ -17,6 +18,8 @@ final class TransportViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemGray6
+        imageView.create(viewController: self)
+        navigationItem.titleView = imageView
         tableView.createTableView(viewController: self, withFooter: false)
         tableView.register(BaseCell.self, forCellReuseIdentifier: CellIdentifier.transport.rawValue)
         tableView.delegate = self
