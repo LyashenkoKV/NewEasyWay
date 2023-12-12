@@ -7,19 +7,13 @@
 
 import UIKit
 
-final class TransportViewController: UIViewController {
+final class TransportViewController: BaseViewController {
     
     weak var delegate: TransportViewControllerDelegate?
-    let tableView = UITableView()
     let transportModel = TransportModel()
-    private let imageView = UIImageView()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemGray6
-        imageView.create(viewController: self)
-        navigationItem.titleView = imageView
-        tableView.createTableView(viewController: self, withFooter: false)
         tableView.register(BaseCell.self, forCellReuseIdentifier: CellIdentifier.transport.rawValue)
         tableView.delegate = self
         tableView.dataSource = self

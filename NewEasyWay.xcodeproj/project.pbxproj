@@ -65,6 +65,10 @@
 		24C9A8262B2335CD008AF2D7 /* RequestTVDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9A8252B2335CD008AF2D7 /* RequestTVDataSource.swift */; };
 		24C9A8282B2335E0008AF2D7 /* RequestTVDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9A8272B2335E0008AF2D7 /* RequestTVDelegate.swift */; };
 		24C9A8382B272B5A008AF2D7 /* ContactsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9A8372B272B5A008AF2D7 /* ContactsManager.swift */; };
+		24C9A8402B2881F3008AF2D7 /* CountryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9A83F2B2881F3008AF2D7 /* CountryViewController.swift */; };
+		24C9A8432B2882EB008AF2D7 /* CountryVCDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9A8422B2882EB008AF2D7 /* CountryVCDataSource.swift */; };
+		24C9A8452B288333008AF2D7 /* CountryVCDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9A8442B288333008AF2D7 /* CountryVCDelegate.swift */; };
+		24C9A8482B28838D008AF2D7 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9A8472B28838D008AF2D7 /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -147,6 +151,10 @@
 		24C9A8252B2335CD008AF2D7 /* RequestTVDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTVDataSource.swift; sourceTree = "<group>"; };
 		24C9A8272B2335E0008AF2D7 /* RequestTVDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTVDelegate.swift; sourceTree = "<group>"; };
 		24C9A8372B272B5A008AF2D7 /* ContactsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsManager.swift; sourceTree = "<group>"; };
+		24C9A83F2B2881F3008AF2D7 /* CountryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryViewController.swift; sourceTree = "<group>"; };
+		24C9A8422B2882EB008AF2D7 /* CountryVCDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryVCDataSource.swift; sourceTree = "<group>"; };
+		24C9A8442B288333008AF2D7 /* CountryVCDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryVCDelegate.swift; sourceTree = "<group>"; };
+		24C9A8472B28838D008AF2D7 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +185,7 @@
 		241FA3022B0DF5100092F97E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				24C9A8462B288378008AF2D7 /* BaseVC */,
 				2492801E2B160DCA00813E6A /* TapBarController */,
 			);
 			path = ViewControllers;
@@ -210,13 +219,13 @@
 			path = BaseCell;
 			sourceTree = "<group>";
 		};
-		246C60A22B186ED4003207BE /* TransportViewController */ = {
+		246C60A22B186ED4003207BE /* TransportVC */ = {
 			isa = PBXGroup;
 			children = (
 				246C60A72B1878EE003207BE /* Extensions */,
 				246C60A32B186F0D003207BE /* TransportViewController.swift */,
 			);
-			path = TransportViewController;
+			path = TransportVC;
 			sourceTree = "<group>";
 		};
 		246C60A72B1878EE003207BE /* Extensions */ = {
@@ -236,32 +245,32 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
-		2486532D2B0F408400D07F42 /* MainViewController */ = {
+		2486532D2B0F408400D07F42 /* MainVC */ = {
 			isa = PBXGroup;
 			children = (
 				24C9A8032B1DC369008AF2D7 /* Button */,
 				24BAEB6A2AF956640087C52F /* MainViewController.swift */,
 			);
-			path = MainViewController;
+			path = MainVC;
 			sourceTree = "<group>";
 		};
-		2486532E2B1489D300D07F42 /* LogisticViewController */ = {
+		2486532E2B1489D300D07F42 /* LogisticVC */ = {
 			isa = PBXGroup;
 			children = (
 				241FA30B2B0F2B2C0092F97E /* Extensions */,
 				247B056E2AFCD3F500B1336C /* Cell */,
 				24BAEB1F2AE949BB0087C52F /* LogisticViewController.swift */,
 			);
-			path = LogisticViewController;
+			path = LogisticVC;
 			sourceTree = "<group>";
 		};
-		2486532F2B1489F200D07F42 /* LocationViewController */ = {
+		2486532F2B1489F200D07F42 /* LocationVC */ = {
 			isa = PBXGroup;
 			children = (
 				241FA30C2B0F2B530092F97E /* Extensions */,
 				241FA3032B0DF55B0092F97E /* LocationViewController.swift */,
 			);
-			path = LocationViewController;
+			path = LocationVC;
 			sourceTree = "<group>";
 		};
 		2492801E2B160DCA00813E6A /* TapBarController */ = {
@@ -413,26 +422,26 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		24C9A7F82B19ED4E008AF2D7 /* RequestViewController */ = {
+		24C9A7F82B19ED4E008AF2D7 /* RequestVC */ = {
 			isa = PBXGroup;
 			children = (
 				24C9A8242B2335A5008AF2D7 /* Extension */,
 				24C9A7F92B19EDCA008AF2D7 /* RequestViewController.swift */,
 			);
-			path = RequestViewController;
+			path = RequestVC;
 			sourceTree = "<group>";
 		};
-		24C9A7FD2B19FC5D008AF2D7 /* ContactsViewController */ = {
+		24C9A7FD2B19FC5D008AF2D7 /* ContactsVC */ = {
 			isa = PBXGroup;
 			children = (
-				24C9A8152B1F54C8008AF2D7 /* DetailsViewController */,
+				24C9A8152B1F54C8008AF2D7 /* DetailsVC */,
 				24C9A80C2B1E04DC008AF2D7 /* Cell */,
 				24C9A8072B1DDCD0008AF2D7 /* Extensions */,
 				24C9A7FE2B19FC8B008AF2D7 /* ContactsViewController.swift */,
 				24C9A8112B1F2896008AF2D7 /* ContactsFooterView.swift */,
 				24C9A8372B272B5A008AF2D7 /* ContactsManager.swift */,
 			);
-			path = ContactsViewController;
+			path = ContactsVC;
 			sourceTree = "<group>";
 		};
 		24C9A8012B1A02E0008AF2D7 /* Fonts */ = {
@@ -469,12 +478,12 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
-		24C9A8152B1F54C8008AF2D7 /* DetailsViewController */ = {
+		24C9A8152B1F54C8008AF2D7 /* DetailsVC */ = {
 			isa = PBXGroup;
 			children = (
 				24C9A8182B1F624F008AF2D7 /* DetailsViewController.swift */,
 			);
-			path = DetailsViewController;
+			path = DetailsVC;
 			sourceTree = "<group>";
 		};
 		24C9A8242B2335A5008AF2D7 /* Extension */ = {
@@ -514,9 +523,9 @@
 		24C9A82B2B271202008AF2D7 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				2486532E2B1489D300D07F42 /* LogisticViewController */,
-				246C60A22B186ED4003207BE /* TransportViewController */,
-				2486532F2B1489F200D07F42 /* LocationViewController */,
+				24C9A83E2B288155008AF2D7 /* CountryVC */,
+				2486532E2B1489D300D07F42 /* LogisticVC */,
+				246C60A22B186ED4003207BE /* TransportVC */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -581,7 +590,7 @@
 		24C9A8322B2713E8008AF2D7 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				24C9A7FD2B19FC5D008AF2D7 /* ContactsViewController */,
+				24C9A7FD2B19FC5D008AF2D7 /* ContactsVC */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -597,7 +606,7 @@
 		24C9A8342B271543008AF2D7 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				24C9A7F82B19ED4E008AF2D7 /* RequestViewController */,
+				24C9A7F82B19ED4E008AF2D7 /* RequestVC */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -613,9 +622,36 @@
 		24C9A8362B2715B4008AF2D7 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				2486532D2B0F408400D07F42 /* MainViewController */,
+				2486532D2B0F408400D07F42 /* MainVC */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		24C9A83E2B288155008AF2D7 /* CountryVC */ = {
+			isa = PBXGroup;
+			children = (
+				2486532F2B1489F200D07F42 /* LocationVC */,
+				24C9A8412B2882C6008AF2D7 /* Extensions */,
+				24C9A83F2B2881F3008AF2D7 /* CountryViewController.swift */,
+			);
+			path = CountryVC;
+			sourceTree = "<group>";
+		};
+		24C9A8412B2882C6008AF2D7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				24C9A8422B2882EB008AF2D7 /* CountryVCDataSource.swift */,
+				24C9A8442B288333008AF2D7 /* CountryVCDelegate.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		24C9A8462B288378008AF2D7 /* BaseVC */ = {
+			isa = PBXGroup;
+			children = (
+				24C9A8472B28838D008AF2D7 /* BaseViewController.swift */,
+			);
+			path = BaseVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -757,7 +793,9 @@
 				24C9A8192B1F624F008AF2D7 /* DetailsViewController.swift in Sources */,
 				24C9A7F52B19D1BE008AF2D7 /* TransportViewControllerDelegate.swift in Sources */,
 				246C60A12B178F09003207BE /* ShippingDatabase.swift in Sources */,
+				24C9A8482B28838D008AF2D7 /* BaseViewController.swift in Sources */,
 				24BAEB592AF93D470087C52F /* MultimodalTransport.swift in Sources */,
+				24C9A8432B2882EB008AF2D7 /* CountryVCDataSource.swift in Sources */,
 				24C9A7FF2B19FC8B008AF2D7 /* ContactsViewController.swift in Sources */,
 				24C9A8122B1F2896008AF2D7 /* ContactsFooterView.swift in Sources */,
 				241FA2FF2B0CE4BC0092F97E /* LogisticTVDelegate.swift in Sources */,
@@ -800,6 +838,8 @@
 				247B05702AFD0F1500B1336C /* BaseCell.swift in Sources */,
 				24C9A8232B222C3B008AF2D7 /* ShippingDataDelegate.swift in Sources */,
 				24BAEB4D2AF932880087C52F /* ShippingRequest.swift in Sources */,
+				24C9A8452B288333008AF2D7 /* CountryVCDelegate.swift in Sources */,
+				24C9A8402B2881F3008AF2D7 /* CountryViewController.swift in Sources */,
 				24BAEB572AF93D0B0087C52F /* RailwayTransport.swift in Sources */,
 				241FA30E2B0F2BB60092F97E /* LocationSRUpdating.swift in Sources */,
 				24C9A80E2B1E04F4008AF2D7 /* ContactViewCell.swift in Sources */,

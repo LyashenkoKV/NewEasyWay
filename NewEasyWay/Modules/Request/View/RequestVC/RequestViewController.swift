@@ -7,20 +7,15 @@
 
 import UIKit
 
-class RequestViewController: UIViewController {
+class RequestViewController: BaseViewController {
 
-    private let imageView = UIImageView()
     private let addRequestButton = UIButton()
-    let tableView = UITableView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemGray6
-        imageView.create(viewController: self)
-        navigationItem.titleView = imageView
-        addRequestButton.createButton(viewController: self, action: #selector(addRequestButtonTapped), title: "Новая заявка")
-        tableView.createTableView(viewController: self, withFooter: false)
         tableView.register(BaseCell.self, forCellReuseIdentifier: CellIdentifier.request.rawValue)
+        addRequestButton.createButton(viewController: self, action: #selector(addRequestButtonTapped), title: "Новая заявка")
+        
         tableView.delegate = self
         tableView.dataSource = self
     }

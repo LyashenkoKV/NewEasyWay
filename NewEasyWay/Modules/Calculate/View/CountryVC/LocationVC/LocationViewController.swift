@@ -7,22 +7,15 @@
 
 import UIKit
 
-final class LocationViewController: UIViewController {
+final class LocationViewController: BaseViewController {
     
-    let tableView = UITableView()
-    
-    private let imageView = UIImageView()
     private lazy var searchController = UISearchController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .systemGray6
         tableView.dataSource = self
         tableView.delegate = self
-        imageView.create(viewController: self)
         tableView.register(BaseCell.self, forCellReuseIdentifier: CellIdentifier.location.rawValue)
-        navigationItem.titleView = imageView
-        tableView.createTableView(viewController: self)
         setup(searchController: searchController)
     }
     

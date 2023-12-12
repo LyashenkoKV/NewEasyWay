@@ -13,6 +13,7 @@ enum CellIdentifier: String {
     case transport = "TransportCell"
     case location = "LocationCell"
     case request = "ApplicationCell"
+    case country = "CountryCell"
     case contacts = "ContactsCell"
 }
 

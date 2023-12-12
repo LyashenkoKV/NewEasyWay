@@ -9,7 +9,7 @@ import UIKit
 
 final class ProfileButton: UIButton {
     
-    var profileImage: UIImage? {
+    private var profileImage: UIImage? {
         didSet {
             updateProfileImage()
         }

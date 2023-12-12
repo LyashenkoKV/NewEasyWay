@@ -8,6 +8,7 @@
 import UIKit
 
 final class MainViewController: UIViewController {
+    
     private let authorizedButton = UIButton()
     private let imageView = UIImageView()
     private let titleLabel = UILabel()
@@ -17,12 +18,12 @@ final class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        view.backgroundColor = .systemGray6
+        
         imageView.create(viewController: self)
         create(titleLabel: titleLabel)
         create(subtitleLabel: subtitleLabel)
         createProfile(barButtonItem: profileButton)
-        
-        view.backgroundColor = .systemGray6
         authorizedButton.createButton(viewController: self, action: #selector(authorizedButtonTapped), title: "Авторизоваться")
     }
     
@@ -72,7 +73,7 @@ final class MainViewController: UIViewController {
         ])
     }
     
-    @objc func authorizedButtonTapped() {
+    @objc private func authorizedButtonTapped() {
         print("Authorized")
     }
 }

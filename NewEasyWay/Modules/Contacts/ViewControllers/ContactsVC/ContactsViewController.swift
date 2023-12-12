@@ -7,22 +7,17 @@
 
 import UIKit
 
-final class ContactsViewController: UIViewController {
+final class ContactsViewController: BaseViewController {
     
     let detailsContactsModel = DetailsContactsModel()
     let contactsModel = ContactsModel()
-    let tableView = UITableView()
     private let callButton = UIButton()
-    private let imageView = UIImageView()
     private let phoneNumber = "8 (800) 222-75-34"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Контакты"
         navigationController?.navigationBar.prefersLargeTitles = true
-        view.backgroundColor = .systemGray6
-        imageView.create(viewController: self)
-        navigationItem.titleView = imageView
         settings(tableView: tableView)
         callButton.createButton(viewController: self, action: #selector(buttonTapped), title: "Позвонить: \(phoneNumber)")
     }
