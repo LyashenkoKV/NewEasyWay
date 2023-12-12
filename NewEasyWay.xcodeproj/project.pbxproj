@@ -65,10 +65,11 @@
 		24C9A8262B2335CD008AF2D7 /* RequestTVDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9A8252B2335CD008AF2D7 /* RequestTVDataSource.swift */; };
 		24C9A8282B2335E0008AF2D7 /* RequestTVDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9A8272B2335E0008AF2D7 /* RequestTVDelegate.swift */; };
 		24C9A8382B272B5A008AF2D7 /* ContactsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9A8372B272B5A008AF2D7 /* ContactsManager.swift */; };
-		24C9A8402B2881F3008AF2D7 /* CountryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9A83F2B2881F3008AF2D7 /* CountryViewController.swift */; };
-		24C9A8432B2882EB008AF2D7 /* CountryVCDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9A8422B2882EB008AF2D7 /* CountryVCDataSource.swift */; };
-		24C9A8452B288333008AF2D7 /* CountryVCDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9A8442B288333008AF2D7 /* CountryVCDelegate.swift */; };
+		24C9A8402B2881F3008AF2D7 /* CountriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9A83F2B2881F3008AF2D7 /* CountriesViewController.swift */; };
+		24C9A8432B2882EB008AF2D7 /* CountriesVCDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9A8422B2882EB008AF2D7 /* CountriesVCDataSource.swift */; };
+		24C9A8452B288333008AF2D7 /* CountriesVCDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9A8442B288333008AF2D7 /* CountriesVCDelegate.swift */; };
 		24C9A8482B28838D008AF2D7 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9A8472B28838D008AF2D7 /* BaseViewController.swift */; };
+		24C9A84A2B28A58E008AF2D7 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9A8492B28A58E008AF2D7 /* String.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -151,10 +152,11 @@
 		24C9A8252B2335CD008AF2D7 /* RequestTVDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTVDataSource.swift; sourceTree = "<group>"; };
 		24C9A8272B2335E0008AF2D7 /* RequestTVDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTVDelegate.swift; sourceTree = "<group>"; };
 		24C9A8372B272B5A008AF2D7 /* ContactsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsManager.swift; sourceTree = "<group>"; };
-		24C9A83F2B2881F3008AF2D7 /* CountryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryViewController.swift; sourceTree = "<group>"; };
-		24C9A8422B2882EB008AF2D7 /* CountryVCDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryVCDataSource.swift; sourceTree = "<group>"; };
-		24C9A8442B288333008AF2D7 /* CountryVCDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryVCDelegate.swift; sourceTree = "<group>"; };
+		24C9A83F2B2881F3008AF2D7 /* CountriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesViewController.swift; sourceTree = "<group>"; };
+		24C9A8422B2882EB008AF2D7 /* CountriesVCDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesVCDataSource.swift; sourceTree = "<group>"; };
+		24C9A8442B288333008AF2D7 /* CountriesVCDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesVCDelegate.swift; sourceTree = "<group>"; };
 		24C9A8472B28838D008AF2D7 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		24C9A8492B28A58E008AF2D7 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -418,6 +420,7 @@
 				246C60A52B18731E003207BE /* CreateTableView.swift */,
 				24C9A7FB2B19F4FF008AF2D7 /* CreateButton.swift */,
 				24C9A81C2B20ABA9008AF2D7 /* CreateLogoImageView.swift */,
+				24C9A8492B28A58E008AF2D7 /* String.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -523,7 +526,7 @@
 		24C9A82B2B271202008AF2D7 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				24C9A83E2B288155008AF2D7 /* CountryVC */,
+				24C9A83E2B288155008AF2D7 /* CountriesVC */,
 				2486532E2B1489D300D07F42 /* LogisticVC */,
 				246C60A22B186ED4003207BE /* TransportVC */,
 			);
@@ -627,21 +630,21 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		24C9A83E2B288155008AF2D7 /* CountryVC */ = {
+		24C9A83E2B288155008AF2D7 /* CountriesVC */ = {
 			isa = PBXGroup;
 			children = (
 				2486532F2B1489F200D07F42 /* LocationVC */,
 				24C9A8412B2882C6008AF2D7 /* Extensions */,
-				24C9A83F2B2881F3008AF2D7 /* CountryViewController.swift */,
+				24C9A83F2B2881F3008AF2D7 /* CountriesViewController.swift */,
 			);
-			path = CountryVC;
+			path = CountriesVC;
 			sourceTree = "<group>";
 		};
 		24C9A8412B2882C6008AF2D7 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				24C9A8422B2882EB008AF2D7 /* CountryVCDataSource.swift */,
-				24C9A8442B288333008AF2D7 /* CountryVCDelegate.swift */,
+				24C9A8422B2882EB008AF2D7 /* CountriesVCDataSource.swift */,
+				24C9A8442B288333008AF2D7 /* CountriesVCDelegate.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -788,6 +791,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24C9A84A2B28A58E008AF2D7 /* String.swift in Sources */,
 				246C60A42B186F0D003207BE /* TransportViewController.swift in Sources */,
 				24BAEB202AE949BB0087C52F /* LogisticViewController.swift in Sources */,
 				24C9A8192B1F624F008AF2D7 /* DetailsViewController.swift in Sources */,
@@ -795,7 +799,7 @@
 				246C60A12B178F09003207BE /* ShippingDatabase.swift in Sources */,
 				24C9A8482B28838D008AF2D7 /* BaseViewController.swift in Sources */,
 				24BAEB592AF93D470087C52F /* MultimodalTransport.swift in Sources */,
-				24C9A8432B2882EB008AF2D7 /* CountryVCDataSource.swift in Sources */,
+				24C9A8432B2882EB008AF2D7 /* CountriesVCDataSource.swift in Sources */,
 				24C9A7FF2B19FC8B008AF2D7 /* ContactsViewController.swift in Sources */,
 				24C9A8122B1F2896008AF2D7 /* ContactsFooterView.swift in Sources */,
 				241FA2FF2B0CE4BC0092F97E /* LogisticTVDelegate.swift in Sources */,
@@ -838,8 +842,8 @@
 				247B05702AFD0F1500B1336C /* BaseCell.swift in Sources */,
 				24C9A8232B222C3B008AF2D7 /* ShippingDataDelegate.swift in Sources */,
 				24BAEB4D2AF932880087C52F /* ShippingRequest.swift in Sources */,
-				24C9A8452B288333008AF2D7 /* CountryVCDelegate.swift in Sources */,
-				24C9A8402B2881F3008AF2D7 /* CountryViewController.swift in Sources */,
+				24C9A8452B288333008AF2D7 /* CountriesVCDelegate.swift in Sources */,
+				24C9A8402B2881F3008AF2D7 /* CountriesViewController.swift in Sources */,
 				24BAEB572AF93D0B0087C52F /* RailwayTransport.swift in Sources */,
 				241FA30E2B0F2BB60092F97E /* LocationSRUpdating.swift in Sources */,
 				24C9A80E2B1E04F4008AF2D7 /* ContactViewCell.swift in Sources */,

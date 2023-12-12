@@ -8,6 +8,13 @@
 import Foundation
 
 struct ShippingDatabase {
+    
+    static let countryEmojis: [String: String] = [
+        "Китай": "🇨🇳",
+        "Россия": "🇷🇺",
+        "Турция": "🇹🇷"
+    ]
+    
     static var countries: [String: [TransportType: [String]]] = [
         "Китай": [
             .auto: ["Пекин", "Хэйхэ", "Маньчжурия", "Суйфэньхэ"],
