@@ -10,6 +10,7 @@ import UIKit
 class CountriesViewController: BaseViewController {
     
     var selectedSection: SectionKind?
+    var selectedDeliveryMethod: TransportType?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,9 +21,15 @@ class CountriesViewController: BaseViewController {
         tableView.register(BaseCell.self, forCellReuseIdentifier: CellIdentifier.country.rawValue)
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.navigationBar.prefersLargeTitles = false
+    }
+    
     private func updateTitle() {
         if let section = selectedSection {
             self.title = (section == .destination) ? "Пункт назначения" : "Пункт отправления"
         }
     }
 }
+

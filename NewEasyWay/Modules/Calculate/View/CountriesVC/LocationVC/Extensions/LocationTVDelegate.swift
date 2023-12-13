@@ -10,5 +10,8 @@ import UIKit
 extension LocationViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        guard let selectedCities = selectedLocations else {
+            return
+        }
     }
 }

@@ -10,7 +10,7 @@ import UIKit
 final class LogisticViewController: BaseViewController {
     
     var logisticModel = LogisticModel()
-    var shippingRequest: ShippingRequest?
+    var transportType: TransportType?
     private let calculateButton = UIButton()
     private let viewModel: CalculatorViewModel
     

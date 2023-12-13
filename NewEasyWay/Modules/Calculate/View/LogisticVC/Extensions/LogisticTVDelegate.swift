@@ -31,6 +31,7 @@ extension LogisticViewController: UITableViewDelegate {
     private func handleDestinationCellSelection(at indexPath: IndexPath) {
         let countriesVC = CountriesViewController()
         countriesVC.selectedSection = SectionKind(rawValue: indexPath.row)
+        countriesVC.selectedDeliveryMethod = transportType
         navigationController?.pushViewController(countriesVC, animated: true)
     }
 }

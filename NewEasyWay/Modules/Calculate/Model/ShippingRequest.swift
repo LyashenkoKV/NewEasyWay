@@ -17,3 +17,5 @@ struct ShippingRequest {
     var customClearance: Bool
     var readyForShipment: Bool
 }
+
+

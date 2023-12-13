@@ -8,9 +8,11 @@
 import Foundation
 
 extension LogisticViewController: TransportViewControllerDelegate {
+    
     func didSelectTransport(_ transportType: TransportType, cellData: CellData) {
+        self.transportType = transportType
         logisticModel.sectionData[.kindOfDelivery]?.data = [cellData]
-        shippingRequest?.deliveryMethod = transportType
+        
         tableView.reloadData()
     }
 }
