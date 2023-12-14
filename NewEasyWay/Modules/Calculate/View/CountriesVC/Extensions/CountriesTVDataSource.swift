@@ -9,7 +9,7 @@ import UIKit
 
 extension CountriesViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return ShippingDatabase.countries.count
+        return countriesArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -18,12 +18,21 @@ extension CountriesViewController: UITableViewDataSource {
         }
         cell.backgroundColor = .systemGray5
         cell.accessoryType = .disclosureIndicator
-        let countries = Array(ShippingDatabase.countries.keys)
-        let country = countries[indexPath.row]
+
+        let country = countriesArray[indexPath.row]
+        
         if let emoji = ShippingDatabase.countryEmojis[country] {
             cell.configure(image: emoji.image(), textTitle: country)
         }
-        
         return cell
+    }
+    
+    func updateCountries() {
+        guard let selectedDeliveryMethod = selectedDeliveryMethod else { return }
+        countriesArray = ShippingDatabase.countries
+            .compactMap { country, locationsByTransport in
+                return locationsByTransport[selectedDeliveryMethod]?.isEmpty == false ? country : nil
+            }
+        print(countriesArray)
     }
 }

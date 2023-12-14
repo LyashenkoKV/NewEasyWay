@@ -11,12 +11,11 @@ extension CountriesViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        let countries = Array(ShippingDatabase.countries.keys)
-        let country = countries[indexPath.row]
+        let country = countriesArray[indexPath.row]
         
-        guard let citiesByTransport = ShippingDatabase.countries[country],
+        guard let locationsByTransport = ShippingDatabase.countries[country],
               let selectedTransport = selectedDeliveryMethod,
-              let location = citiesByTransport[selectedTransport] else {
+              let location = locationsByTransport[selectedTransport] else {
             return
         }
         

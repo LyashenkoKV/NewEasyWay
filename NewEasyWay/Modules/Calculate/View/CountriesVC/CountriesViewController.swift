@@ -11,10 +11,12 @@ class CountriesViewController: BaseViewController {
     
     var selectedSection: SectionKind?
     var selectedDeliveryMethod: TransportType?
+    var countriesArray:[String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         updateTitle()
+        updateCountries()
         navigationController?.navigationBar.prefersLargeTitles = true
         tableView.dataSource = self
         tableView.delegate = self
