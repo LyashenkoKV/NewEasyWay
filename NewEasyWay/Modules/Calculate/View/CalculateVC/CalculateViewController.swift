@@ -7,15 +7,18 @@
 
 import UIKit
 
-final class LogisticViewController: BaseViewController {
+final class CalculateViewController: BaseViewController {
     
-    var logisticModel = LogisticModel()
     var transportType: TransportType?
+    var calculateModel: CalculateModel?
     private let calculateButton = UIButton()
     private let viewModel: CalculatorViewModel
     
+    var selectedIndexPath: IndexPath? // TODO
+    
     init(viewModel: CalculatorViewModel = CalculatorViewModel()) {
         self.viewModel = viewModel
+        self.calculateModel = CalculateModel()
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -41,3 +44,4 @@ final class LogisticViewController: BaseViewController {
         }
     }
 }
+

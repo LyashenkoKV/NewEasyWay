@@ -19,7 +19,7 @@ enum SectionKind: Int, CaseIterable {
     case kindOfDelivery, destination, shipmentParam, shipmentQuest
 }
 
-struct LogisticModel {
+struct CalculateModel {
     var sectionData: [SectionKind: LogisticSectionData] = [:]
     
     init() {

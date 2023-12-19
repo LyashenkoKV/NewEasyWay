@@ -39,7 +39,7 @@ class BaseCell: UITableViewCell {
     let title: UILabel = {
         let lbl = UILabel()
         lbl.translatesAutoresizingMaskIntoConstraints = false
-        lbl.font = UIFont.systemFont(ofSize: 15, weight: .light)
+        lbl.font = UIFont.systemFont(ofSize: 17, weight: .light)
         lbl.numberOfLines = 1
         return lbl
     }()

@@ -21,7 +21,7 @@ class RequestViewController: BaseViewController {
     }
     
     @objc func addRequestButtonTapped() {
-        let logisticViewController = LogisticViewController()
-        navigationController?.pushViewController(logisticViewController, animated: true)
+        let calculateViewController = CalculateViewController()
+        navigationController?.pushViewController(calculateViewController, animated: true)
     }
 }

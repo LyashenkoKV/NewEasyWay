@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol TransportViewControllerDelegate: AnyObject {
+protocol TransportDelegate: AnyObject {
     func didSelectTransport(_ transportType: TransportType, cellData: CellData)
 }

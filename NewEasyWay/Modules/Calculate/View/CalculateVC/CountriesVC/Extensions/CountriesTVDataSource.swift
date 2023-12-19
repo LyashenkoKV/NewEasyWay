@@ -33,6 +33,5 @@ extension CountriesViewController: UITableViewDataSource {
             .compactMap { country, locationsByTransport in
                 return locationsByTransport[selectedDeliveryMethod]?.isEmpty == false ? country : nil
             }
-        print(countriesArray)
     }
 }

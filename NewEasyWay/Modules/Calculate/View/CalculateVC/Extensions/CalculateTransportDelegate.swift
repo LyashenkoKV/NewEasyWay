@@ -7,11 +7,11 @@
 
 import Foundation
 
-extension LogisticViewController: TransportViewControllerDelegate {
+extension CalculateViewController: TransportDelegate {
     
     func didSelectTransport(_ transportType: TransportType, cellData: CellData) {
         self.transportType = transportType
-        logisticModel.sectionData[.kindOfDelivery]?.data = [cellData]
+        calculateModel?.sectionData[.kindOfDelivery]?.data = [cellData]
         tableView.reloadData()
     }
 }

@@ -9,7 +9,7 @@ import UIKit
 
 final class MainTabBarController: UITabBarController {
     private let mainViewController = MainViewController()
-    private let logisticsCalculatiorViewController = LogisticViewController()
+    private let logisticsCalculatiorViewController = CalculateViewController()
     private let applicationViewController = RequestViewController()
     private let contactsViewController = ContactsViewController()
     

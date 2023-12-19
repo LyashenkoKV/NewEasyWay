@@ -9,8 +9,8 @@
 /* Begin PBXBuildFile section */
 		24147EB52B04A61500CA980A /* QuestionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24147EB42B04A61500CA980A /* QuestionViewCell.swift */; };
 		24147EB92B06153E00CA980A /* CellConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24147EB82B06153E00CA980A /* CellConfigurable.swift */; };
-		24147EBB2B061CDD00CA980A /* LogisticTVDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24147EBA2B061CDD00CA980A /* LogisticTVDataSource.swift */; };
-		241FA2FF2B0CE4BC0092F97E /* LogisticTVDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241FA2FE2B0CE4BC0092F97E /* LogisticTVDelegate.swift */; };
+		24147EBB2B061CDD00CA980A /* CalculateTVDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24147EBA2B061CDD00CA980A /* CalculateTVDataSource.swift */; };
+		241FA2FF2B0CE4BC0092F97E /* CalculateTVDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241FA2FE2B0CE4BC0092F97E /* CalculateTVDelegate.swift */; };
 		241FA3012B0CE4EB0092F97E /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241FA3002B0CE4EB0092F97E /* UIColor.swift */; };
 		241FA3042B0DF55B0092F97E /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241FA3032B0DF55B0092F97E /* LocationViewController.swift */; };
 		246C60A12B178F09003207BE /* ShippingDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246C60A02B178F09003207BE /* ShippingDatabase.swift */; };
@@ -24,7 +24,7 @@
 		247B05722B0241CA00B1336C /* CellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247B05712B0241CA00B1336C /* CellData.swift */; };
 		24BAEB1C2AE949BB0087C52F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BAEB1B2AE949BB0087C52F /* AppDelegate.swift */; };
 		24BAEB1E2AE949BB0087C52F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BAEB1D2AE949BB0087C52F /* SceneDelegate.swift */; };
-		24BAEB202AE949BB0087C52F /* LogisticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BAEB1F2AE949BB0087C52F /* LogisticViewController.swift */; };
+		24BAEB202AE949BB0087C52F /* CalculateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BAEB1F2AE949BB0087C52F /* CalculateViewController.swift */; };
 		24BAEB252AE949BE0087C52F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24BAEB242AE949BE0087C52F /* Assets.xcassets */; };
 		24BAEB282AE949BE0087C52F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24BAEB262AE949BE0087C52F /* LaunchScreen.storyboard */; };
 		24BAEB332AE949BE0087C52F /* NewEasyWayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BAEB322AE949BE0087C52F /* NewEasyWayTests.swift */; };
@@ -39,11 +39,11 @@
 		24BAEB5C2AF93E080087C52F /* TransportFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BAEB5B2AF93E080087C52F /* TransportFactory.swift */; };
 		24BAEB5E2AF93F3C0087C52F /* ConcreteTransportFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BAEB5D2AF93F3C0087C52F /* ConcreteTransportFactory.swift */; };
 		24BAEB602AF93FF80087C52F /* SeaTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BAEB5F2AF93FF80087C52F /* SeaTransport.swift */; };
-		24BAEB672AF944FA0087C52F /* LogisticModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BAEB662AF944FA0087C52F /* LogisticModel.swift */; };
+		24BAEB672AF944FA0087C52F /* CalculateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BAEB662AF944FA0087C52F /* CalculateModel.swift */; };
 		24BAEB692AF94E6E0087C52F /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BAEB682AF94E6E0087C52F /* MainTabBarController.swift */; };
 		24BAEB6B2AF956640087C52F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24BAEB6A2AF956640087C52F /* MainViewController.swift */; };
-		24C9A7F52B19D1BE008AF2D7 /* TransportViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9A7F42B19D1BE008AF2D7 /* TransportViewControllerDelegate.swift */; };
-		24C9A7F72B19D245008AF2D7 /* LogisticTransportDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9A7F62B19D245008AF2D7 /* LogisticTransportDelegate.swift */; };
+		24C9A7F52B19D1BE008AF2D7 /* TransportDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9A7F42B19D1BE008AF2D7 /* TransportDelegate.swift */; };
+		24C9A7F72B19D245008AF2D7 /* CalculateTransportDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9A7F62B19D245008AF2D7 /* CalculateTransportDelegate.swift */; };
 		24C9A7FA2B19EDCA008AF2D7 /* RequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9A7F92B19EDCA008AF2D7 /* RequestViewController.swift */; };
 		24C9A7FC2B19F4FF008AF2D7 /* CreateButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9A7FB2B19F4FF008AF2D7 /* CreateButton.swift */; };
 		24C9A7FF2B19FC8B008AF2D7 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9A7FE2B19FC8B008AF2D7 /* ContactsViewController.swift */; };
@@ -69,6 +69,8 @@
 		24C9A8452B288333008AF2D7 /* CountriesTVDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9A8442B288333008AF2D7 /* CountriesTVDelegate.swift */; };
 		24C9A8482B28838D008AF2D7 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9A8472B28838D008AF2D7 /* BaseViewController.swift */; };
 		24C9A84A2B28A58E008AF2D7 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C9A8492B28A58E008AF2D7 /* String.swift */; };
+		24FCAFB22B30922500F7F303 /* CalculateLocationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FCAFB12B30922500F7F303 /* CalculateLocationDelegate.swift */; };
+		24FCAFB42B30930000F7F303 /* LocationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FCAFB32B30930000F7F303 /* LocationDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,8 +93,8 @@
 /* Begin PBXFileReference section */
 		24147EB42B04A61500CA980A /* QuestionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewCell.swift; sourceTree = "<group>"; };
 		24147EB82B06153E00CA980A /* CellConfigurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellConfigurable.swift; sourceTree = "<group>"; };
-		24147EBA2B061CDD00CA980A /* LogisticTVDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogisticTVDataSource.swift; sourceTree = "<group>"; };
-		241FA2FE2B0CE4BC0092F97E /* LogisticTVDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogisticTVDelegate.swift; sourceTree = "<group>"; };
+		24147EBA2B061CDD00CA980A /* CalculateTVDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateTVDataSource.swift; sourceTree = "<group>"; };
+		241FA2FE2B0CE4BC0092F97E /* CalculateTVDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateTVDelegate.swift; sourceTree = "<group>"; };
 		241FA3002B0CE4EB0092F97E /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		241FA3032B0DF55B0092F97E /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
 		246C60A02B178F09003207BE /* ShippingDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShippingDatabase.swift; sourceTree = "<group>"; };
@@ -107,7 +109,7 @@
 		24BAEB182AE949BB0087C52F /* NewEasyWay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewEasyWay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24BAEB1B2AE949BB0087C52F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24BAEB1D2AE949BB0087C52F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		24BAEB1F2AE949BB0087C52F /* LogisticViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogisticViewController.swift; sourceTree = "<group>"; };
+		24BAEB1F2AE949BB0087C52F /* CalculateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateViewController.swift; sourceTree = "<group>"; };
 		24BAEB242AE949BE0087C52F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24BAEB272AE949BE0087C52F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		24BAEB292AE949BE0087C52F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -125,11 +127,11 @@
 		24BAEB5B2AF93E080087C52F /* TransportFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportFactory.swift; sourceTree = "<group>"; };
 		24BAEB5D2AF93F3C0087C52F /* ConcreteTransportFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcreteTransportFactory.swift; sourceTree = "<group>"; };
 		24BAEB5F2AF93FF80087C52F /* SeaTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeaTransport.swift; sourceTree = "<group>"; };
-		24BAEB662AF944FA0087C52F /* LogisticModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogisticModel.swift; sourceTree = "<group>"; };
+		24BAEB662AF944FA0087C52F /* CalculateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateModel.swift; sourceTree = "<group>"; };
 		24BAEB682AF94E6E0087C52F /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		24BAEB6A2AF956640087C52F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		24C9A7F42B19D1BE008AF2D7 /* TransportViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportViewControllerDelegate.swift; sourceTree = "<group>"; };
-		24C9A7F62B19D245008AF2D7 /* LogisticTransportDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogisticTransportDelegate.swift; sourceTree = "<group>"; };
+		24C9A7F42B19D1BE008AF2D7 /* TransportDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportDelegate.swift; sourceTree = "<group>"; };
+		24C9A7F62B19D245008AF2D7 /* CalculateTransportDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateTransportDelegate.swift; sourceTree = "<group>"; };
 		24C9A7F92B19EDCA008AF2D7 /* RequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestViewController.swift; sourceTree = "<group>"; };
 		24C9A7FB2B19F4FF008AF2D7 /* CreateButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateButton.swift; sourceTree = "<group>"; };
 		24C9A7FE2B19FC8B008AF2D7 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
@@ -155,6 +157,8 @@
 		24C9A8442B288333008AF2D7 /* CountriesTVDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesTVDelegate.swift; sourceTree = "<group>"; };
 		24C9A8472B28838D008AF2D7 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		24C9A8492B28A58E008AF2D7 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		24FCAFB12B30922500F7F303 /* CalculateLocationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateLocationDelegate.swift; sourceTree = "<group>"; };
+		24FCAFB32B30930000F7F303 /* LocationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,9 +198,10 @@
 		241FA30B2B0F2B2C0092F97E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				24147EBA2B061CDD00CA980A /* LogisticTVDataSource.swift */,
-				241FA2FE2B0CE4BC0092F97E /* LogisticTVDelegate.swift */,
-				24C9A7F62B19D245008AF2D7 /* LogisticTransportDelegate.swift */,
+				24147EBA2B061CDD00CA980A /* CalculateTVDataSource.swift */,
+				241FA2FE2B0CE4BC0092F97E /* CalculateTVDelegate.swift */,
+				24C9A7F62B19D245008AF2D7 /* CalculateTransportDelegate.swift */,
+				24FCAFB12B30922500F7F303 /* CalculateLocationDelegate.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -253,14 +258,16 @@
 			path = MainVC;
 			sourceTree = "<group>";
 		};
-		2486532E2B1489D300D07F42 /* LogisticVC */ = {
+		2486532E2B1489D300D07F42 /* CalculateVC */ = {
 			isa = PBXGroup;
 			children = (
+				246C60A22B186ED4003207BE /* TransportVC */,
+				24C9A83E2B288155008AF2D7 /* CountriesVC */,
 				241FA30B2B0F2B2C0092F97E /* Extensions */,
 				247B056E2AFCD3F500B1336C /* Cell */,
-				24BAEB1F2AE949BB0087C52F /* LogisticViewController.swift */,
+				24BAEB1F2AE949BB0087C52F /* CalculateViewController.swift */,
 			);
-			path = LogisticVC;
+			path = CalculateVC;
 			sourceTree = "<group>";
 		};
 		2486532F2B1489F200D07F42 /* LocationVC */ = {
@@ -439,7 +446,6 @@
 				24C9A8072B1DDCD0008AF2D7 /* Extensions */,
 				24C9A7FE2B19FC8B008AF2D7 /* ContactsViewController.swift */,
 				24C9A8112B1F2896008AF2D7 /* ContactsFooterView.swift */,
-				24C9A8372B272B5A008AF2D7 /* ContactsManager.swift */,
 			);
 			path = ContactsVC;
 			sourceTree = "<group>";
@@ -523,9 +529,7 @@
 		24C9A82B2B271202008AF2D7 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				24C9A83E2B288155008AF2D7 /* CountriesVC */,
-				2486532E2B1489D300D07F42 /* LogisticVC */,
-				246C60A22B186ED4003207BE /* TransportVC */,
+				2486532E2B1489D300D07F42 /* CalculateVC */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -534,7 +538,7 @@
 			isa = PBXGroup;
 			children = (
 				24BAEB4C2AF932880087C52F /* ShippingRequest.swift */,
-				24BAEB662AF944FA0087C52F /* LogisticModel.swift */,
+				24BAEB662AF944FA0087C52F /* CalculateModel.swift */,
 				246C60AE2B18E868003207BE /* TransportModel.swift */,
 				246C60A02B178F09003207BE /* ShippingDatabase.swift */,
 			);
@@ -562,6 +566,7 @@
 			children = (
 				24C9A80F2B1E1746008AF2D7 /* ContactsModel.swift */,
 				24C9A81A2B1F6F22008AF2D7 /* DetailsContactsModel.swift */,
+				24C9A8372B272B5A008AF2D7 /* ContactsManager.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -570,8 +575,9 @@
 			isa = PBXGroup;
 			children = (
 				24BAEB4F2AF933500087C52F /* TransportProtocol.swift */,
-				24C9A7F42B19D1BE008AF2D7 /* TransportViewControllerDelegate.swift */,
+				24C9A7F42B19D1BE008AF2D7 /* TransportDelegate.swift */,
 				24C9A8222B222C3B008AF2D7 /* ShippingDataDelegate.swift */,
+				24FCAFB32B30930000F7F303 /* LocationDelegate.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -790,17 +796,17 @@
 			files = (
 				24C9A84A2B28A58E008AF2D7 /* String.swift in Sources */,
 				246C60A42B186F0D003207BE /* TransportViewController.swift in Sources */,
-				24BAEB202AE949BB0087C52F /* LogisticViewController.swift in Sources */,
+				24BAEB202AE949BB0087C52F /* CalculateViewController.swift in Sources */,
 				24C9A8192B1F624F008AF2D7 /* DetailsViewController.swift in Sources */,
-				24C9A7F52B19D1BE008AF2D7 /* TransportViewControllerDelegate.swift in Sources */,
+				24C9A7F52B19D1BE008AF2D7 /* TransportDelegate.swift in Sources */,
 				246C60A12B178F09003207BE /* ShippingDatabase.swift in Sources */,
 				24C9A8482B28838D008AF2D7 /* BaseViewController.swift in Sources */,
 				24BAEB592AF93D470087C52F /* MultimodalTransport.swift in Sources */,
 				24C9A8432B2882EB008AF2D7 /* CountriesTVDataSource.swift in Sources */,
 				24C9A7FF2B19FC8B008AF2D7 /* ContactsViewController.swift in Sources */,
 				24C9A8122B1F2896008AF2D7 /* ContactsFooterView.swift in Sources */,
-				241FA2FF2B0CE4BC0092F97E /* LogisticTVDelegate.swift in Sources */,
-				24147EBB2B061CDD00CA980A /* LogisticTVDataSource.swift in Sources */,
+				241FA2FF2B0CE4BC0092F97E /* CalculateTVDelegate.swift in Sources */,
+				24147EBB2B061CDD00CA980A /* CalculateTVDataSource.swift in Sources */,
 				24C9A8382B272B5A008AF2D7 /* ContactsManager.swift in Sources */,
 				24BAEB502AF933500087C52F /* TransportProtocol.swift in Sources */,
 				24C9A81D2B20ABA9008AF2D7 /* CreateLogoImageView.swift in Sources */,
@@ -820,9 +826,9 @@
 				24C9A8142B1F3CED008AF2D7 /* ContactsFooterDelegate.swift in Sources */,
 				24BAEB1E2AE949BB0087C52F /* SceneDelegate.swift in Sources */,
 				24BAEB5C2AF93E080087C52F /* TransportFactory.swift in Sources */,
-				24C9A7F72B19D245008AF2D7 /* LogisticTransportDelegate.swift in Sources */,
+				24C9A7F72B19D245008AF2D7 /* CalculateTransportDelegate.swift in Sources */,
 				246C60A92B187959003207BE /* TransportTVDataSource.swift in Sources */,
-				24BAEB672AF944FA0087C52F /* LogisticModel.swift in Sources */,
+				24BAEB672AF944FA0087C52F /* CalculateModel.swift in Sources */,
 				241FA3012B0CE4EB0092F97E /* UIColor.swift in Sources */,
 				24C9A7FA2B19EDCA008AF2D7 /* RequestViewController.swift in Sources */,
 				24BAEB6B2AF956640087C52F /* MainViewController.swift in Sources */,
@@ -837,11 +843,13 @@
 				24147EB52B04A61500CA980A /* QuestionViewCell.swift in Sources */,
 				24C9A8092B1DDCFC008AF2D7 /* ContactsTVDS.swift in Sources */,
 				247B05702AFD0F1500B1336C /* BaseCell.swift in Sources */,
+				24FCAFB22B30922500F7F303 /* CalculateLocationDelegate.swift in Sources */,
 				24C9A8232B222C3B008AF2D7 /* ShippingDataDelegate.swift in Sources */,
 				24BAEB4D2AF932880087C52F /* ShippingRequest.swift in Sources */,
 				24C9A8452B288333008AF2D7 /* CountriesTVDelegate.swift in Sources */,
 				24C9A8402B2881F3008AF2D7 /* CountriesViewController.swift in Sources */,
 				24BAEB572AF93D0B0087C52F /* RailwayTransport.swift in Sources */,
+				24FCAFB42B30930000F7F303 /* LocationDelegate.swift in Sources */,
 				24C9A80E2B1E04F4008AF2D7 /* ContactViewCell.swift in Sources */,
 				24C9A8282B2335E0008AF2D7 /* RequestTVDelegate.swift in Sources */,
 			);

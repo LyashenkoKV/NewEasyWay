@@ -9,7 +9,10 @@ import UIKit
 
 final class LocationViewController: BaseViewController {
     
+    var logisticModel = CalculateModel()
     var selectedLocations: [String]?
+    
+    weak var delegate: LocationDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()

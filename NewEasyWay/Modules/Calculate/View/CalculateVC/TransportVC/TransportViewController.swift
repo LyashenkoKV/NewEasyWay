@@ -9,7 +9,7 @@ import UIKit
 
 final class TransportViewController: BaseViewController {
     
-    weak var delegate: TransportViewControllerDelegate?
+    weak var delegate: TransportDelegate?
     let transportModel = TransportModel()
     
     override func viewDidLoad() {

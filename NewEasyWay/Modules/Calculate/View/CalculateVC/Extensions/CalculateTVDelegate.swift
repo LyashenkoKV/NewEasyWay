@@ -8,7 +8,7 @@
 import UIKit
 
 // MARK: - UICollectionViewDelegate
-extension LogisticViewController: UITableViewDelegate {
+extension CalculateViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let section = SectionKind(rawValue: indexPath.section) else { return }
         
@@ -17,6 +17,7 @@ extension LogisticViewController: UITableViewDelegate {
             handleTransportCellSelection(at: indexPath)
         case .destination:
             handleDestinationCellSelection(at: indexPath)
+            selectedIndexPath = indexPath
         case .shipmentParam: break
         case .shipmentQuest: break
         }
@@ -30,8 +31,11 @@ extension LogisticViewController: UITableViewDelegate {
     
     private func handleDestinationCellSelection(at indexPath: IndexPath) {
         let countriesVC = CountriesViewController()
+        let locationVC = LocationViewController()
+        locationVC.delegate = self
         countriesVC.selectedSection = SectionKind(rawValue: indexPath.row)
         countriesVC.selectedDeliveryMethod = transportType
+        countriesVC.locationDelegate = locationVC.delegate
         navigationController?.pushViewController(countriesVC, animated: true)
     }
 }

@@ -8,14 +8,14 @@
 import UIKit
 
 // MARK: - UICollectionViewDataSource
-extension LogisticViewController: UITableViewDataSource {
+extension CalculateViewController: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return SectionKind.allCases.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        guard let sectionKind = SectionKind(rawValue: section),
+        guard let sectionKind = SectionKind(rawValue: section), let logisticModel = calculateModel,
               let sectionData = logisticModel.sectionData[sectionKind] else {
             return 0
         }
@@ -23,7 +23,7 @@ extension LogisticViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let section = SectionKind(rawValue: indexPath.section),
+        guard let section = SectionKind(rawValue: indexPath.section), let logisticModel = calculateModel,
               let sectionData = logisticModel.sectionData[section] else {
             return UITableViewCell()
         }

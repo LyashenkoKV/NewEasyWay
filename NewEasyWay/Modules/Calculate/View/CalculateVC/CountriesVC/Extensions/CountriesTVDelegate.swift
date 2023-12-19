@@ -22,6 +22,7 @@ extension CountriesViewController: UITableViewDelegate {
         let locationVC = LocationViewController()
         locationVC.selectedLocations = location
         
+        locationVC.delegate = locationDelegate
         navigationController?.pushViewController(locationVC, animated: true)
     }
 }

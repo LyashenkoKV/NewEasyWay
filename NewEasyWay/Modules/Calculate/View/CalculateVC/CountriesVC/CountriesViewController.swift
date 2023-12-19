@@ -12,20 +12,15 @@ class CountriesViewController: BaseViewController {
     var selectedSection: SectionKind?
     var selectedDeliveryMethod: TransportType?
     var countriesArray:[String] = []
+    weak var locationDelegate: LocationDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         updateTitle()
         updateCountries()
-        navigationController?.navigationBar.prefersLargeTitles = true
         tableView.dataSource = self
         tableView.delegate = self
         tableView.register(BaseCell.self, forCellReuseIdentifier: CellIdentifier.country.rawValue)
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        navigationController?.navigationBar.prefersLargeTitles = false
     }
     
     private func updateTitle() {
