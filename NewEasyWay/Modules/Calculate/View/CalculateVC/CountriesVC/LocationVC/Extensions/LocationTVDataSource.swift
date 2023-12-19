@@ -17,7 +17,7 @@ extension LocationViewController: UITableViewDataSource {
         cell.backgroundColor = .systemGray5
         
         let location = selectedLocations?[indexPath.row]
-        cell.configure(image: UIImage(systemName: "globe.central.south.asia"), textTitle: location ?? "")
+        cell.configure(image: UIImage(systemName: "globe.central.south.asia"), textTitle: location ?? "", tintColor: .appGreen)
         
         return cell
     }

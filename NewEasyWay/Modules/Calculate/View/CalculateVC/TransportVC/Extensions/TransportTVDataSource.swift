@@ -20,7 +20,7 @@ extension TransportViewController: UITableViewDataSource {
               let cellData = transportModel.cellData[transportType] else {
             return cell
         }
-        cell.configure(image: cellData.image, textTitle: cellData.textTitle)
+        cell.configure(image: cellData.image, textTitle: cellData.textTitle, tintColor: cellData.tintColor)
         return cell
     }
     

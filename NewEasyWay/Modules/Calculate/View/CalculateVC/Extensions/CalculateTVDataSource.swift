@@ -34,13 +34,13 @@ extension CalculateViewController: UITableViewDataSource {
             cell.backgroundColor = .systemGray5
             cell.accessoryType = .disclosureIndicator
             let cellData = sectionData.data[indexPath.row]
-            cell.configure(image: cellData.image, textTitle: cellData.textTitle)
+            cell.configure(image: cellData.image, textTitle: cellData.textTitle, tintColor: cellData.tintColor)
             return cell
         case .shipmentQuest:
             let cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifier.question.rawValue, for: indexPath) as? QuestionViewCell ?? QuestionViewCell()
             cell.backgroundColor = .systemGray5
             let cellData = sectionData.data[indexPath.row]
-            cell.configure(image: cellData.image, textTitle: cellData.textTitle)
+            cell.configure(image: cellData.image, textTitle: cellData.textTitle, tintColor: cellData.tintColor)
             return cell
         }
     }

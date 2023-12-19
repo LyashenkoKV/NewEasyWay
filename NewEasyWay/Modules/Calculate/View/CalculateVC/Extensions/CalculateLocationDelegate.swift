@@ -17,11 +17,10 @@ extension CalculateViewController: LocationDelegate {
         
         if let selectedIndexPath = selectedIndexPath,
            selectedIndexPath.row < destinationSection.data.count {
-            destinationSection.data[selectedIndexPath.row] = CellData(image: UIImage(systemName: "mappin.and.ellipse"), textTitle: location)
+            destinationSection.data[selectedIndexPath.row] = CellData(image: UIImage(systemName: "mappin.and.ellipse"), textTitle: location, tintColor: .appGreen)
             calculateModel?.sectionData[.destination] = destinationSection
-        } else {
-            print("Not working")
         }
+        
         selectedIndexPath = nil
         tableView.reloadData()
     }

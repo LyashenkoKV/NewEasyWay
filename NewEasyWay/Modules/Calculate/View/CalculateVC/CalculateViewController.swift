@@ -9,12 +9,11 @@ import UIKit
 
 final class CalculateViewController: BaseViewController {
     
+    var selectedIndexPath: IndexPath?
     var transportType: TransportType?
     var calculateModel: CalculateModel?
     private let calculateButton = UIButton()
     private let viewModel: CalculatorViewModel
-    
-    var selectedIndexPath: IndexPath? // TODO
     
     init(viewModel: CalculatorViewModel = CalculatorViewModel()) {
         self.viewModel = viewModel

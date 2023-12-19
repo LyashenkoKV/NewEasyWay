@@ -10,4 +10,5 @@ import UIKit
 struct CellData {
     let image: UIImage?
     let textTitle: String
+    let tintColor: UIColor
 }

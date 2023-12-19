@@ -22,7 +22,7 @@ extension CountriesViewController: UITableViewDataSource {
         let country = countriesArray[indexPath.row]
         
         if let emoji = ShippingDatabase.countryEmojis[country] {
-            cell.configure(image: emoji.image(), textTitle: country)
+            cell.configure(image: emoji.image(), textTitle: country, tintColor: .appGreen)
         }
         return cell
     }

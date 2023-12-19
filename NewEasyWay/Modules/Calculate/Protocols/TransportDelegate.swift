@@ -5,8 +5,8 @@
 //  Created by Konstantin Lyashenko on 01.12.2023.
 //
 
-import Foundation
+import UIKit
 
 protocol TransportDelegate: AnyObject {
-    func didSelectTransport(_ transportType: TransportType, cellData: CellData)
+    func didSelectTransport(_ transportType: TransportType, cellData: CellData, tintColor: UIColor)
 }

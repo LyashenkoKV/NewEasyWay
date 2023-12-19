@@ -29,7 +29,6 @@ class BaseCell: UITableViewCell {
     
     let cellImageView: UIImageView? = {
         let img = UIImageView()
-        img.tintColor = .appGreen
         img.translatesAutoresizingMaskIntoConstraints = false
         img.contentMode = .scaleAspectFit
         img.clipsToBounds = true
@@ -85,8 +84,9 @@ class BaseCell: UITableViewCell {
 }
 
 extension BaseCell: CellConfigurable {
-    func configure(image: UIImage?, textTitle: String) {
+    func configure(image: UIImage?, textTitle: String, tintColor: UIColor) {
         cellImageView?.image = image
         title.text = textTitle
+        cellImageView?.tintColor = tintColor
     }
 }

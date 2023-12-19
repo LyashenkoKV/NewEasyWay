@@ -16,7 +16,8 @@ extension TransportViewController: UITableViewDelegate {
               let selectedCellData = transportModel.cellData[selectedTransportType] else {
             return
         }
-        delegate?.didSelectTransport(selectedTransportType, cellData: selectedCellData)
+        
+        delegate?.didSelectTransport(selectedTransportType, cellData: selectedCellData, tintColor: .appGreen)
         navigationController?.popViewController(animated: true)
     }
 }
