@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		240DF34D2B31C612004A465A /* TNVEDModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 240DF34B2B31C612004A465A /* TNVEDModel.xcdatamodeld */; };
 		24147EB52B04A61500CA980A /* QuestionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24147EB42B04A61500CA980A /* QuestionViewCell.swift */; };
 		24147EB92B06153E00CA980A /* CellConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24147EB82B06153E00CA980A /* CellConfigurable.swift */; };
 		24147EBB2B061CDD00CA980A /* CalculateTVDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24147EBA2B061CDD00CA980A /* CalculateTVDataSource.swift */; };
@@ -91,6 +92,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		240DF34C2B31C612004A465A /* TNVEDModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TNVEDModel.xcdatamodel; sourceTree = "<group>"; };
 		24147EB42B04A61500CA980A /* QuestionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewCell.swift; sourceTree = "<group>"; };
 		24147EB82B06153E00CA980A /* CellConfigurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellConfigurable.swift; sourceTree = "<group>"; };
 		24147EBA2B061CDD00CA980A /* CalculateTVDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateTVDataSource.swift; sourceTree = "<group>"; };
@@ -186,6 +188,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		240DF34A2B31C5EF004A465A /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				240DF34B2B31C612004A465A /* TNVEDModel.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		241FA3022B0DF5100092F97E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -310,6 +320,7 @@
 		24BAEB1A2AE949BB0087C52F /* NewEasyWay */ = {
 			isa = PBXGroup;
 			children = (
+				240DF34A2B31C5EF004A465A /* CoreData */,
 				24C9A8312B2713AE008AF2D7 /* Global */,
 				24C9A8292B270E96008AF2D7 /* Modules */,
 				24BAEB622AF942350087C52F /* AppBase */,
@@ -807,6 +818,7 @@
 				24C9A8122B1F2896008AF2D7 /* ContactsFooterView.swift in Sources */,
 				241FA2FF2B0CE4BC0092F97E /* CalculateTVDelegate.swift in Sources */,
 				24147EBB2B061CDD00CA980A /* CalculateTVDataSource.swift in Sources */,
+				240DF34D2B31C612004A465A /* TNVEDModel.xcdatamodeld in Sources */,
 				24C9A8382B272B5A008AF2D7 /* ContactsManager.swift in Sources */,
 				24BAEB502AF933500087C52F /* TransportProtocol.swift in Sources */,
 				24C9A81D2B20ABA9008AF2D7 /* CreateLogoImageView.swift in Sources */,
@@ -1201,6 +1213,19 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCVersionGroup section */
+		240DF34B2B31C612004A465A /* TNVEDModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				240DF34C2B31C612004A465A /* TNVEDModel.xcdatamodel */,
+			);
+			currentVersion = 240DF34C2B31C612004A465A /* TNVEDModel.xcdatamodel */;
+			path = TNVEDModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 24BAEB102AE949BB0087C52F /* Project object */;
 }

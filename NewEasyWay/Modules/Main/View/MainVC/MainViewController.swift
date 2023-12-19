@@ -19,6 +19,7 @@ final class MainViewController: UIViewController {
         super.viewDidLoad()
         
         view.backgroundColor = .systemGray6
+        tabBarController?.tabBar.tintColor = .appGreen
         
         imageView.create(viewController: self)
         create(titleLabel: titleLabel)

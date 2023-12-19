@@ -26,11 +26,10 @@ final class MainTabBarController: UITabBarController {
     }
     
     private func addViewControllers() {
-        let monochrome = UIImage.SymbolConfiguration.preferringMonochrome()
-        guard let mainImage = UIImage(systemName: "shippingbox", withConfiguration: monochrome),
-              let calcImage = UIImage(systemName: "plusminus", withConfiguration: monochrome),
-              let applImage = UIImage(systemName: "list.bullet", withConfiguration: monochrome),
-              let contactsImage = UIImage(systemName: "phone.down", withConfiguration: monochrome) else { return }
+        guard let mainImage = UIImage(systemName: "shippingbox"),
+              let calcImage = UIImage(systemName: "plusminus"),
+              let applImage = UIImage(systemName: "list.bullet"),
+              let contactsImage = UIImage(systemName: "phone.down") else { return }
         
         viewControllers = [
             generateNavigationController(rootViewController: mainViewController, title: "Главная", image: mainImage),
@@ -40,3 +39,9 @@ final class MainTabBarController: UITabBarController {
         ]
     }
  }
+
+extension MainTabBarController {
+    override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
+        tabBar.tintColor = .appGreen
+    }
+}
